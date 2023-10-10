@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<title>Dashboard EPF</title>
+<link rel="shortcut icon" type="image/x-icon" href="img/epf_logo_favicon.ico">
+
+<!-- google fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- style padrão -->
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>    
+    <div class="container">
+        <div class="sidebar-wrapper">
+        <nav class="sidebar" onmouseover="toggleSidebar()" onmouseout="toggleSidebar()">
+          <div class="epf_logo_area">
+             <img class="epf_logo" src="img/epf_logo.svg" alt="logo_epf">
+             <div class="btn-expandir">
+                <img class="arrow-left-icon" src="img/icons/chevron_left.svg" id="btn-exp">
+            </div>
+          </div>  
+         
+          <ul>
+              <li class="list-item ativo">
+                  <a href="#">
+                      <span class="icon"><img class="sidebar-icon" src="img/icons/home.svg"></span>
+                      <span class="text-link">Inicio</span>
+                  </a>
+              </li>
+          </ul>
+    
+          <ul>
+              <li class="list-item">
+                  <a href="#">
+                      <span class="icon"><img class="sidebar-icon" src="img/icons/assignment_turned_in.svg"></span>
+                      <span class="text-link">Resultados</span>
+                  </a>
+              </li>
+          </ul>
+    
+          <ul>
+              <li class="list-item">
+                  <a href="#">
+                      <span class="icon"><img class="sidebar-icon" src="img/icons/settings.svg"></span>
+                      <span class="text-link">Configurações</span>
+                  </a>
+              </li>
+          </ul>
+    
+          <ul>
+              <li class="list-item">
+                  <a href="#">
+                      <span class="icon"><img class="sidebar-icon" src="img/icons/filter_list.svg"</i></span>
+                      <span class="text-link">Formulários</span>
+                  </a>
+              </li>
+          </ul>
+    
+          <ul>
+              <li class="list-item">
+                  <a href="#">
+                      <span class="icon"><img class="sidebar-icon" src="img/icons/contact_support.svg"></span>
+                      <span class="text-link">Suporte</span>
+                  </a>
+              </li>
+          </ul> 
+          <div class="sidebar-logout-wrapper">
+          <div class="epf-site-illus-wrapper">
+            <img class="epf-site-illus-img" src="img/epf_site_illus.svg">
+            <button class="epf-site-illus-button">Acesse nosso site</button>
+          </div>
+          <div class="logout-wrapper">
+            <img class="logout-icon" src="img/icons/logout.svg">
+            <p class="logout-title">Logout</p>
+          </div>
+        </div> 
+        </nav>
+    </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+          <div class="header_iner">
+            <div class="search_field-area">
+              <div class="search_inner">
+                <form action="#">
+                 <div class="search_field">
+                  <input type="text" placeholder="O que deseja encontrar?...">
+                 </div>
+                 <button type="submit"> <img class="search-icon" src="img/icons/search.svg" alt> </button>
+                </form>
+               </div>
+            </div>
+            <div class="header_right">
+             <div class="header_notification_warp">
+              <li>
+               <a class="bell_notification_clicker" href="#"> <img src="img/icons/notifications.svg" alt></a>
+            </div>
+            <div class="profile_info">
+               <img src="img/client_img.png" alt="#">
+            </div>
+            </div>
+          </div>
+        </div>
+    </div>
+<div class="container-princ">
+    <div class="wrapper">
+        <div class="breadcrumb">
+            <p class="dashboard-title">Dashboard</p>
+            <div class="breadcrumb-link-wrapper">
+            <p class="breadcrumb-link">Home /</p>
+            <p class="breadcrumb-link-active">Dashboard</p>
+            </div>
+        </div>
+       <div class="filter-wrapper">
+         <div class="filter-wrapper-radio">
+          <input type="radio" id="atividades" name="filter-all" value="atividades">
+          <label class="filter-radio" for="atividades">Atividades</label><br>
+          <input type="radio" id="equipes" name="filter-all" value="equipes">
+          <label class="filter-radio"for="equipes">Equipes</label><br>
+        </div>
+        <div class="search_field-area filter-search">
+         <div class="search_inner">
+          <form action="#">
+            <div class="search_field filter">
+             <input type="text" placeholder="Filtrar por...">
+            </div>
+            <button type="submit"><img class="search-icon" src="img/icons/search.svg" alt> </button>
+           </form>
+          </div>
+        </div>
+        <div class="filter-wrapper-radio">
+         <div class="filter-wrapper-tag">
+          <span class="filter-tag">Atividade 12</span>
+          <img class="filter-icon" src="img/icons/close.svg">
+         </div>
+         <div class="filter-wrapper-tag">
+          <span class="filter-tag">Atividade 25</span>
+          <img class="filter-icon" src="img/icons/close.svg">
+         </div>
+        </div>
+       </div>
+        <div>
+            <button class="filter-button-reset">Resetar Filtros</button>
+        </div>
+    </div>
+        <div class="cards">
+         <div class="card-menor">
+          <div class="card-menor-wrapper">
+           <p class="card-menor-title">Atividades</p>
+           <p class="card-menor-desc">5</p>
+          </div>
+          <div class="card-menor-icon-wrapper">
+           <div class="card-icon-img-round green">
+            <img class="card-icon-img" src="img/icons/assignment_turned_in.svg" alt="atividades">
+           </div>
+          </div>
+         </div>
+
+        <div class="card-menor">
+          <div class="card-menor-wrapper">
+           <p class="card-menor-title">Equipes</p>
+           <p class="card-menor-desc">12</p>
+          </div>
+         <div class="card-menor-icon-wrapper">
+          <div class="card-icon-img-round green">
+           <img class="card-icon-img" src="img/icons/groups.svg" alt="atividades">
+          </div>
+         </div>
+        </div>
+
+        <div class="card-menor">
+         <div class="card-menor-wrapper">
+          <p class="card-menor-title">Talhões</p>
+          <p class="card-menor-desc">125</p>
+         </div>
+         <div class="card-menor-icon-wrapper">
+          <div class="card-icon-img-round green">
+            <img class="card-icon-img" src="img/icons/check_box.svg" alt="atividades">
+          </div>
+         </div>
+        </div>
+
+        <div class="card-menor">
+            <div class="card-menor-wrapper">
+              <p class="card-menor-title">Incêndios</p>
+              <p class="card-menor-desc">300</p>
+            </div>
+            <div class="card-menor-icon-wrapper">
+            <div class="card-icon-img-round green">
+              <img class="card-icon-img" src="img/icons/local_fire_department.svg" alt="atividades">
+            </div>
+            </div>
+        </div>
+
+        <div class="card">
+         <p class="card-title">Conformidade</p>
+         <div class="card-wrapper">
+         <canvas id="piechart"></canvas>
+         </div>
+        </div>
+      
+        <div class="card card-bars">
+          <p class="card-title">Conformidade dos Dados</p>
+         <div class="card-wrapper">
+          <canvas id="bars"></canvas>
+         </div>
+        </div>
+       </div>
+    </div>
+</body>
+
+<footer class="footer">
+    <p class="footer-text">Made with<img class="footer-heart-icon" src="img/icons/favorite.svg"> by Lucas Barbosa.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<script src="js/charts.js"></script>
+<script src="js/index.js"></script>
+</html>
